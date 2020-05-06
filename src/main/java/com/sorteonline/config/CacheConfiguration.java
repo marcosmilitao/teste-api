@@ -42,6 +42,12 @@ public class CacheConfiguration {
             createCache(cm, com.sorteonline.domain.User.class.getName());
             createCache(cm, com.sorteonline.domain.Authority.class.getName());
             createCache(cm, com.sorteonline.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sorteonline.domain.Blog.class.getName());
+            createCache(cm, com.sorteonline.domain.Post.class.getName());
+            createCache(cm, com.sorteonline.domain.Post.class.getName() + ".tags");
+            createCache(cm, com.sorteonline.domain.Tag.class.getName());
+            createCache(cm, com.sorteonline.domain.Tag.class.getName() + ".entries");
+            createCache(cm, com.sorteonline.domain.Autor.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
